@@ -117,7 +117,7 @@ Connect the battery power to the 5V and GND pin of the ESP board, using an exter
 A key-press and the following sendout use about the same amount of enery as the remote uses in 2 minutes of deep-sleep, assuming the modifications mentioned i.e. removing the power LED. 
 So unless a button is pressed more than 700 times per day, the deep-sleep power consumption is the dominating factor: hence the importance of low deep-sleep current. 
 
-<img src="/images/rotary_setup_example.jpg" width="80%">
+<img src="/images/rotary_setup_example.jpg" width="100%">
 
 ### Controller modifications for low power
 The power-LED on the controller uses "a lot" of current, around 1mA and it is the dominating factor for battery life. It has to be removed to achieve the proclaimed ~45uA. The best (but not easiest) way to do this is to desolder it. 
@@ -125,24 +125,24 @@ It can also be cut/destroyed using pointy side-cutters or a knife, however there
 
 For more reliable operation add a 4.7uF or larger ceramic capacitor between the 3.3V pin and GND: I use 0805 sized 10uF/25V capacitors soldered directly to the C3 supermini pads. The capacitor helps to store energy required for the send-bursts.
 
-<img src="/images/C3supermini.jpg" width="80%">
+<img src="/images/C3supermini.jpg" width="100%">
 
 ### Note on ESP32 C3 Supermini variants
 There are several variations of the C3 supermini, at least one of them is know to cause issues with the wifi-reception due to bad hardware design. The badly designe ones are easy to spot if you know what exactly to look for.
 Here is a side-by-side comparison of the good and the bad.
 
-<img src="/images/C3_good_bad.jpg" width="80%">
+<img src="/images/C3_good_bad.jpg" width="100%">
 
 I only own one of the bad ones and mine still works ok, the signal strength is reduced by about 50%. 
 
 ## Examples for button modules
 During development and testing I tried several different button-module designs that are commonly available in internet shops. Here are some fotos of tested and working configurations and which GPIOs are best to be used.
 
-<img src="/images/tactile_buttons.jpg" width="80%">
+<img src="/images/tactile_buttons.jpg" width="100%">
 
-<img src="/images/membrane_buttonpads.jpg" width="80%">
+<img src="/images/membrane_buttonpads.jpg" width="100%">
 
-<img src="/images/rotary_encoder.jpg" width="80%">
+<img src="/images/rotary_encoder.jpg" width="100%">
 
 ## License and Credits
 
