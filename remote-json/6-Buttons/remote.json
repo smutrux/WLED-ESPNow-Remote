@@ -1,0 +1,76 @@
+{
+  "_comment": "Key definitions for 6-Button ESPNow Remote",
+  "remote": "ESPNow 6-Key Remote",  
+  "16": {
+    "label": "Btn0 single",    
+    "cmd": {"ps":1}
+  },
+  "17": {
+    "label": "Btn0 double",    
+    "cmd": {"ps":2}
+  },
+  "18": {
+    "label": "Btn0 long",    
+    "cmd": {"ps":3}
+  },
+  "19": {
+    "label": "Btn1 single",    
+    "cmd": {"ps":4}
+  },
+  "20": {
+    "label": "Btn1 double",    
+    "cmd": {"ps":5}
+  },
+  "21": {
+    "label": "Btn1 long",    
+    "cmd": {"ps":6}
+  },
+  "22": {
+    "label": "Btn2 single",    
+    "cmd": {"ps":7}
+  },
+  "23": {
+    "label": "Btn2 double",    
+    "cmd": {"ps":8}
+  },
+  "24": {
+    "label": "Btn2 long",    
+    "cmd": {"ps":9}
+  },
+  "25": {
+    "label": "Btn3 single",    
+    "cmd": {"ps":10}
+  },
+  "26": {
+    "label": "Btn3 double",    
+    "cmd": {"ps":11}
+  },
+  "27": {
+    "label": "Btn3 long",    
+    "cmd": {"ps":12}
+  },
+  "28": {
+    "label": "Btn4 single",    
+    "cmd": {"ps":13}
+  },
+  "29": {
+    "label": "Btn4 double",    
+    "cmd": {"ps":14}
+  },
+  "30": {
+    "label": "Btn4 long",    
+    "cmd": {"ps":15}
+  },
+  "31": {
+    "label": "Btn5 single",    
+    "cmd": {"ps":16}
+  },
+  "32": {
+    "label": "Btn5 double",    
+    "cmd": {"ps":17}
+  },
+  "33": {
+    "label": "Btn5 long",    
+    "cmd": {"ps":18}
+  }
+}

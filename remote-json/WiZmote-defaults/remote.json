@@ -1,0 +1,56 @@
+{
+  "_comment": "Key definitions for WiZmote",
+  "remote": "ESPNow Remote",
+  "1": {
+    "label": "On",    
+    "cmd": {"on":true}
+  },
+  "2": {
+    "label": "Off",    
+    "cmd": {"on":false}
+  },
+  "3": {
+    "label": "Night",
+    "cmd": {"nl":{"on":true,"dur":10,"mode":2,"tbri":5}}
+  },
+  "9": {
+    "label": "Bright+",
+    "cmd": {"bri":"~25"}
+  },
+  "8": {
+    "label": "Bright-",
+    "cmd": {"bri":"~-25"}
+  },
+  "16": {
+    "label": "One",    
+    "cmd": {"ps":1}
+  },
+  "17": {
+    "label": "Two",
+    "cmd": {"ps":2}
+  },
+  "18": {
+    "label": "Three",
+    "cmd": {"ps":3}
+  },
+  "19": {
+    "label": "Four",
+    "cmd": {"ps":4}
+  },
+  "100": {
+    "label": "Smart On",    
+    "cmd": {"on":true}
+  },
+  "101": {
+    "label": "Smart Off",    
+    "cmd": {"on":false}
+  },
+  "102": {
+    "label": "Smart Bright+",
+    "cmd": {"bri":"~25"}
+  },
+  "103": {
+    "label": "Smart Bright-",
+    "cmd": {"bri":"~-25"}
+  }
+}

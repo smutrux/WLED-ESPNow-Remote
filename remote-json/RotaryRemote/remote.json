@@ -1,0 +1,35 @@
+{
+  "_comment": "Key definitions for rotary encoder based ESPNow Remote",
+  "remote": "ESPNow Rotary Remote",  
+  "1": {
+    "label": "Btn0 single",    
+    "cmd": {"on":true}
+  },
+  "2": {
+    "label": "Btn0 long",    
+    "cmd": {"on":false}
+  },
+  "8": {
+    "label": "Bright-",
+    "cmd": {"bri":"~-25"}
+  },
+  "9": {
+    "label": "Bright+",
+    "cmd": {"bri":"~25"}
+  },
+  "16": {
+    "label": "Preset-",    
+    "cmd": {"ps":"1~15~-"}
+  },
+  "17": {
+    "label": "Preset+",    
+    "cmd": {"ps":"1~15~"}
+  },
+  "18": {
+    "label": "Palette-",    
+    "cmd": {"seg":[{"id":0,"pal":"6~70~-"}]}
+  },
+  "19": {
+    "label": "Palette+",    
+    "cmd": {"seg":[{"id":0,"pal":"6~70~"}]}
+}

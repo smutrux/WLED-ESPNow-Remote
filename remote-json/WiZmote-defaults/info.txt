@@ -1,0 +1,4 @@
+Example remote.json for WiZ-mote remotes:
+
+the actions defined in the remote.json are the same as the defaults used by WLED without a remote.json file
+edit whichever key you want to change the action for.

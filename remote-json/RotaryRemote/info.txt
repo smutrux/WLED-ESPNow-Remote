@@ -1,0 +1,39 @@
+Example remote.json for remote with rotary encoder:
+
+button single click: on
+button double click: change level (no action sent)
+button long  press: off
+
+rotary level0 clockwise: increase brightness
+rotary level0 counter-clockwise: decrease brightness
+
+rotary level1 clockwise: next preset (presets 1 to 15)
+rotary level1 counter-clockwise: previous preset (preset 1 to 15)
+
+rotary level2 clockwise: next palette
+rotary level2 counter-clockwise: previous palette
+
+in buttons.ino:
+set DEFAULTS_START to 1
+
+use this configuration for the button:
+
+buttons[0].singleClickFunction = WIZMOTE_BUTTON_ON; // = code 1
+buttons[0].doubleClickFunction = 0;  // used to change rotary level
+buttons[0].longPressFunction = WIZMOTE_BUTTON_OFF;  // = code 2
+ 
+set NUM_ROTARYLEVELS to 3
+
+Turning the rotary encoder will send these codes for different levels: coutnerclockwise / clockwise
+- level 0: WIZMOTE_BUTTON_BRIGHT_DOWN = 8 / WIZMOTE_BUTTON_BRIGHT_UP = 9
+- level 1: WIZMOTE_BUTTON_ONE = 16 	  / WIZMOTE_BUTTON_ONE+1 = 17
+- level 2: WIZMOTE_BUTTON_ONE+2 = 18 	  / WIZMOTE_BUTTON_ONE+3 = 19
+
+(higher levels continue the same way)
+
+note:
+WIZMOTE_BUTTON_ONE+1 is also WIZMOTE_BUTTON_TWO
+WIZMOTE_BUTTON_ONE+2 is also WIZMOTE_BUTTON_THREE
+WIZMOTE_BUTTON_ONE+3 is also WIZMOTE_BUTTON_FOUR
+
+these have default actions defined in WLED if no remote.json file is found

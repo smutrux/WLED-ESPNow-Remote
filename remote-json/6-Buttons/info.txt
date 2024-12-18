@@ -1,0 +1,15 @@
+Example remote.json for 6 buttons:
+
+button0 single click: preset 1
+button0 double click: preset 2
+button0 long  press: preset 3
+
+button1 single click: preset 4
+button1 double click: preset 5
+button1 long  press: preset 6
+
+etc.
+
+set DEFAULTS_START in buttons.ino to 0 and all buttons will use the default functions used in this example.
+The default starts at button function number 16.
+The example commands simply trigger a different preset for each button function.
