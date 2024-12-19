@@ -11,11 +11,11 @@
   },
   "8": {
     "label": "Bright-",
-    "cmd": {"bri":"~-25"}
+    "cmd": {"bri":"5~255~-15"}
   },
   "9": {
     "label": "Bright+",
-    "cmd": {"bri":"~25"}
+    "cmd": {"bri":"5~255~15"}
   },
   "16": {
     "label": "Preset-",    
