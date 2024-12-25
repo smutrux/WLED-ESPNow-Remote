@@ -102,7 +102,7 @@ void setup() {
   Serial.println("ESP-NOW initialized.");
 
   // Register callback to handle received messages
-  esp_now_register_recv_cb(onDataReceive);
+  esp_now_register_recv_cb(esp_now_recv_cb_t(onDataReceive));
   esp_wifi_set_channel(2, WIFI_SECOND_CHAN_NONE); // use wifi channel 2, change if this channel is clogged up or use channel hopping (see main loop)
   blink(5, 50);  // indicate ready
 }
