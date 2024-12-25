@@ -61,8 +61,8 @@ bool initEspNow() {
     esp_sleep_enable_timer_wakeup(10000000);
     esp_deep_sleep_start();  // go to deep sleep for 10 seconds to save some battery in case this is a boot-loop
   }
-  esp_now_register_send_cb(OnDataSent);  // register callback function
-  //esp_now_register_recv_cb(onDataReceive); // receive is not used in broadcast
+  esp_now_register_send_cb(esp_now_send_cb_t(OnDataSent));  // register callback function
+  //esp_now_register_recv_cb(esp_now_recv_cb_t(onDataReceive)); // receive is not used in broadcast
   esp_now_peer_info_t peerInfo = {};                      // register peer (i.e. a broadcast)
   memcpy(peerInfo.peer_addr, globalBroadcastAddress, 6);  // use centered channel as default (in case there is antenna calibration going on, probably unimportant)
   peerInfo.channel = 0;                                   // use 0 if not using a specific channel
