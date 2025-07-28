@@ -135,6 +135,14 @@ Here is a side-by-side comparison of the good and the bad.
 
 I only own one of the bad ones and mine still works ok, the signal strength is reduced by about 50%. 
 
+## Finished remote
+![PXL_20250728_000420064 RAW-01 MP COVER](https://github.com/user-attachments/assets/425824d2-ac7e-477c-86de-f38f84a30deb)
+![PXL_20250728_000413364 RAW-01 MP COVER](https://github.com/user-attachments/assets/47f36be5-3c77-4f98-9a85-ac57009723ac)
+![PXL_20250728_000352728 RAW-01 MP COVER](https://github.com/user-attachments/assets/5d99efd5-92e8-4033-8003-b4d2202e6c72)
+![PXL_20250728_000436622 RAW-01 MP COVER](https://github.com/user-attachments/assets/189f79a1-3450-4d87-985f-75d0102e82f0)
+![PXL_20250728_000428658 RAW-01 MP COVER](https://github.com/user-attachments/assets/50772bed-2873-422d-b6ca-056c6874a3e3)
+
+
 ## Examples for button modules
 During development and testing I tried several different button-module designs that are commonly available in internet shops. Here are some fotos of tested and working configurations and which GPIOs are best to be used.
 
